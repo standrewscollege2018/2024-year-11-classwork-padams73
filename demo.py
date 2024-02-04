@@ -1,2 +1,2 @@
 # Demo program for GitHub
-print("Hello world")
+print("GitHub")
