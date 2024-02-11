@@ -11,6 +11,7 @@ def check_input(n):
     except ValueError:
         return False
 
+# Constants
 AGE_MIN = 16
 WEIGHT_MIN = 50
 
