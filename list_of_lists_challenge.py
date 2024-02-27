@@ -20,3 +20,25 @@ stop
 2. Bob 15
 3. Charlie 20
 '''
+
+people = []
+get_details = True
+while get_details:
+    person = []
+    name = input()
+    if name.lower() == "stop":
+        get_details = False
+    else:
+        person.append(name)
+        get_age = True
+        while get_age:
+            try:
+                age = int(input())
+
+                person.append(age)
+                people.append(person)
+            except ValueError:
+                print("Enter an integer")
+
+for i in range(len(people)):
+    print(f"{i+1} {people[i][0]} {people[i][1]}")
